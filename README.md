@@ -14,29 +14,6 @@ A robust, Java-based Library Management System with a Swing UI designed in NetBe
 
 ---
 
-## Repository Structure
-
-```
-Library-Management-System/
-├── src/
-│   └── library/
-│       ├── ClerkMenuUI.java
-│       ├── LibrarianMenu.java
-│       ├── LoginUI.java
-│       ├── StudentMenuUI.java
-│       ├── dbConnectivity.java
-│       └── *.form
-├── sql/
-│   └── schema.sql
-├── .gitignore
-└── README.md
-```
-
-* `src/library/`: Java source files and NetBeans form definitions
-* `sql/schema.sql`: SQL script to create database and tables
-
----
-
 ## Environment Configuration
 
 1. **Set JAVA\_HOME** (Windows):
@@ -63,47 +40,6 @@ Library-Management-System/
 
    * Start MySQL Server
    * Optionally configure to start automatically
-
----
-
-## Database Setup
-
-1. **Create schema and user** by executing `sql/schema.sql` in MySQL Workbench or CLI:
-
-   ```sql
-   -- schema.sql
-   CREATE DATABASE IF NOT EXISTS Library;
-   USE Library;
-
-   CREATE TABLE IF NOT EXISTS Users (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     username VARCHAR(50) NOT NULL UNIQUE,
-     password VARCHAR(100) NOT NULL,
-     role ENUM('librarian','clerk','student') NOT NULL,
-     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-
-   CREATE TABLE IF NOT EXISTS Books (
-     id INT AUTO_INCREMENT PRIMARY KEY,
-     title VARCHAR(200) NOT NULL,
-     author VARCHAR(100),
-     isbn VARCHAR(20) UNIQUE,
-     available BOOLEAN DEFAULT TRUE,
-     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-
-   CREATE USER IF NOT EXISTS 'new_user'@'localhost' IDENTIFIED BY '123';
-   GRANT ALL PRIVILEGES ON Library.* TO 'new_user'@'localhost';
-   FLUSH PRIVILEGES;
-   ```
-
-2. **Verify tables**:
-
-   ```sql
-   SHOW TABLES IN Library;
-   SELECT * FROM Users;
-   SELECT * FROM Books;
-   ```
 
 ---
 
@@ -140,19 +76,6 @@ Library-Management-System/
 
 ---
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/YourFeature`
-3. Commit changes: `git commit -m "Add YourFeature description"`
-4. Push: `git push origin feature/YourFeature`
-5. Open a Pull Request
-
----
-
-## License
-
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
