@@ -1,10 +1,10 @@
-# 📚 Library Management System
+# Library Management System
 
 A robust, Java-based Library Management System with a Swing UI designed in NetBeans and backed by a MySQL database.
 
 ---
 
-## 🛠️ Prerequisites
+## Prerequisites
 
 * **Java Development Kit**: JDK 22 or higher
 * **IDE**: NetBeans IDE 17 or above (with GUI Builder)
@@ -14,7 +14,7 @@ A robust, Java-based Library Management System with a Swing UI designed in NetBe
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 Library-Management-System/
@@ -37,7 +37,7 @@ Library-Management-System/
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 1. **Set JAVA\_HOME** (Windows):
 
@@ -66,7 +66,7 @@ Library-Management-System/
 
 ---
 
-## 💾 Database Setup
+## Database Setup
 
 1. **Create schema and user** by executing `sql/schema.sql` in MySQL Workbench or CLI:
 
@@ -107,7 +107,7 @@ Library-Management-System/
 
 ---
 
-## 🔨 Building & Running
+## Building & Running
 
 1. **Open NetBeans** → `File` → `Open Project` → select `Library-Management-System`
 2. **Add JDBC Driver**:
@@ -127,7 +127,7 @@ Library-Management-System/
 
 ---
 
-## 🧪 Testing
+## Testing
 
 * **Test user login**:
 
@@ -140,7 +140,7 @@ Library-Management-System/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/YourFeature`
@@ -150,7 +150,7 @@ Library-Management-System/
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
